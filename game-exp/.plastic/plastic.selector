@@ -1,0 +1,4 @@
+repository "game1337@cvtmslf@cloud"
+  path "/"
+    br "/main"
+    co "/main"
