@@ -225,3 +225,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 21e6266d36bc93e458e7faa115e320cb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  projectile: {fileID: 8468737772128091081, guid: bfa9d9981ab7f554e96e0a64a99f3a53, type: 3}
+  minDamage: 10
+  maxDamage: 20
+  projectileForce: 5.25

@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 2578915493601258681}
   - component: {fileID: 7805607262604563471}
   - component: {fileID: 9031412669297578383}
+  - component: {fileID: -6802707565570037382}
   m_Layer: 0
   m_Name: testSpell
   m_TagString: Untagged
@@ -75,8 +76,8 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: -2413806693520163455, guid: a86470a33a6bf42c4b3595704624658b, type: 3}
-  m_Color: {r: 0.9811321, g: 0, b: 0, a: 1}
+  m_Sprite: {fileID: -69595873, guid: f7c7a704ec53f3f4bb682c7992f0b7c7, type: 3}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -148,3 +149,15 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 0
+--- !u!114 &-6802707565570037382
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8468737772128091081}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 83b63c43242bdb143aae6ef4a5939dc0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 

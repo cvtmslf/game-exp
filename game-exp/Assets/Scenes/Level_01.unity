@@ -298,11 +298,11 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 385186987347510689, guid: 874b30f01875216439f3eba87cc6606b, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 2.656
+      value: 2.732
       objectReference: {fileID: 0}
     - target: {fileID: 385186987347510689, guid: 874b30f01875216439f3eba87cc6606b, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -1.917
+      value: -1.879
       objectReference: {fileID: 0}
     - target: {fileID: 385186987347510689, guid: 874b30f01875216439f3eba87cc6606b, type: 3}
       propertyPath: m_LocalPosition.z
@@ -339,6 +339,18 @@ PrefabInstance:
     - target: {fileID: 6558329747182527631, guid: 874b30f01875216439f3eba87cc6606b, type: 3}
       propertyPath: m_Name
       value: test_enemy
+      objectReference: {fileID: 0}
+    - target: {fileID: 7979970278409945675, guid: 874b30f01875216439f3eba87cc6606b, type: 3}
+      propertyPath: m_Color.b
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7979970278409945675, guid: 874b30f01875216439f3eba87cc6606b, type: 3}
+      propertyPath: m_Color.g
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7979970278409945675, guid: 874b30f01875216439f3eba87cc6606b, type: 3}
+      propertyPath: m_Color.r
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8486170420486879330, guid: 874b30f01875216439f3eba87cc6606b, type: 3}
       propertyPath: m_Enabled
