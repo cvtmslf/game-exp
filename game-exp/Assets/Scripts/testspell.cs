@@ -16,7 +16,7 @@ public class testspell : MonoBehaviour
             Vector2 mousePos = Camera.main.ScreenToWorldPoint(Input.mousePosition);
             Vector2 myPos = transform.position;
             Vector2 direction = (mousePos - myPos).normalized;
-            //spell.transform.rotation = ;
+            spell.transform.rotation = Quaternion.LookRotation(transform.forward, direction);
             spell.GetComponent<Rigidbody2D>().velocity = direction * projectileForce;
             Destroy(spell,2);
         }
