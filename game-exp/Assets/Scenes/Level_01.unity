@@ -147,17 +147,25 @@ PrefabInstance:
       propertyPath: projectileForce
       value: 5
       objectReference: {fileID: 0}
+    - target: {fileID: -5660655256702752515, guid: 015b4024436630b429d11f86856478ac, type: 3}
+      propertyPath: spellstartrotation.y
+      value: 90
+      objectReference: {fileID: 0}
+    - target: {fileID: -5660655256702752515, guid: 015b4024436630b429d11f86856478ac, type: 3}
+      propertyPath: spellstartrotation.z
+      value: -90
+      objectReference: {fileID: 0}
     - target: {fileID: 3462408899375786029, guid: 015b4024436630b429d11f86856478ac, type: 3}
       propertyPath: m_Name
       value: Player
       objectReference: {fileID: 0}
     - target: {fileID: 9021304799168322478, guid: 015b4024436630b429d11f86856478ac, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 0.892
+      value: 0.71
       objectReference: {fileID: 0}
     - target: {fileID: 9021304799168322478, guid: 015b4024436630b429d11f86856478ac, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -1.891
+      value: -1.85
       objectReference: {fileID: 0}
     - target: {fileID: 9021304799168322478, guid: 015b4024436630b429d11f86856478ac, type: 3}
       propertyPath: m_LocalPosition.z
@@ -302,7 +310,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   player: {fileID: 978722182}
-  smoothing: 0
+  smoothing: 0.1
+  offset: {x: 0, y: 0, z: -1}
 --- !u!1001 &944691510
 PrefabInstance:
   m_ObjectHideFlags: 0
