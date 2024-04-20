@@ -9,13 +9,14 @@ public class testProjectile : MonoBehaviour
 
     void OnTriggerEnter2D(Collider2D collision)
     {
-        if (collision.name != "Player")
+        if (collision.name != "Player" & collision.name != "testSpell(Clone)")
         {
             if(collision.GetComponent<enemy_receive_dmg>() != null)
             {
                 collision.GetComponent<enemy_receive_dmg>().DealDamage(Random.Range(minDamage, maxDamage));
             }
-            Destroy(gameObject);
+                      
+        Destroy(gameObject); 
 
         }
     }
