@@ -1,12 +1,11 @@
 using System.Collections;
 using System.Collections.Generic;
+using Unity.Mathematics;
 using UnityEngine;
 
 public class testspell : MonoBehaviour
 {
     public GameObject projectile;
-    public float minDamage;
-    public float maxDamage;
     public float projectileForce;
 
     private void Update()

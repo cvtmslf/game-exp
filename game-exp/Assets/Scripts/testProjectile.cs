@@ -4,15 +4,19 @@ using UnityEngine;
 
 public class testProjectile : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
+    public float minDamage;
+    public float maxDamage; 
 
-    // Update is called once per frame
-    void Update()
+    void OnTriggerEnter2D(Collider2D collision)
     {
-        
+        if (collision.name != "Player")
+        {
+            if(collision.GetComponent<enemy_receive_dmg>() != null)
+            {
+                collision.GetComponent<enemy_receive_dmg>().DealDamage(Random.Range(minDamage, maxDamage));
+            }
+            Destroy(gameObject);
+
+        }
     }
 }

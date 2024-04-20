@@ -13,7 +13,8 @@ public class enemy_receive_dmg : MonoBehaviour
     }
 
     public void DealDamage(float damage)
-    { health -= damage;
+    { 
+        health -= damage;
         CheckDeath();
     }
 
