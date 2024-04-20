@@ -18,6 +18,7 @@ public class testspell : MonoBehaviour
             Vector2 myPos = transform.position;
             Vector2 direction = (mousePos - myPos).normalized;
             spell.GetComponent<Rigidbody2D>().velocity = direction *projectileForce;
+            Destroy(spell,2);
         }
     }
 }

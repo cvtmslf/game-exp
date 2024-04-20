@@ -145,7 +145,7 @@ PrefabInstance:
       objectReference: {fileID: 8468737772128091081, guid: bfa9d9981ab7f554e96e0a64a99f3a53, type: 3}
     - target: {fileID: -5660655256702752515, guid: 015b4024436630b429d11f86856478ac, type: 3}
       propertyPath: projectileForce
-      value: 0.0001
+      value: 5.25
       objectReference: {fileID: 0}
     - target: {fileID: 3462408899375786029, guid: 015b4024436630b429d11f86856478ac, type: 3}
       propertyPath: m_Name
