@@ -6,6 +6,7 @@ public class PlayerMovement : MonoBehaviour
 {
     public float speed;
     private Vector2 direction;
+    private Vector2 directionHistory;
     private Animator animator;
 
     private void Start()
@@ -22,7 +23,7 @@ public class PlayerMovement : MonoBehaviour
     private void Move()
     {
         transform.Translate(direction * speed * Time.deltaTime);
-        SetAnimatorMovement(direction);
+        SetAnimatorMovement(directionHistory);
 
     }
 
@@ -45,6 +46,10 @@ public class PlayerMovement : MonoBehaviour
         if(Input.GetKey(KeyCode.D))
         {
             direction += Vector2.right;
+        }
+        if (direction != Vector2.zero)
+        {
+            directionHistory = direction;
         }
 
     }
