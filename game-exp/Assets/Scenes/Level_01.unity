@@ -161,11 +161,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 9021304799168322478, guid: 015b4024436630b429d11f86856478ac, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 0.71
+      value: 0.549
       objectReference: {fileID: 0}
     - target: {fileID: 9021304799168322478, guid: 015b4024436630b429d11f86856478ac, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -1.85
+      value: -1.955
       objectReference: {fileID: 0}
     - target: {fileID: 9021304799168322478, guid: 015b4024436630b429d11f86856478ac, type: 3}
       propertyPath: m_LocalPosition.z
@@ -322,11 +322,11 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 385186987347510689, guid: 874b30f01875216439f3eba87cc6606b, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 2.732
+      value: 4.182
       objectReference: {fileID: 0}
     - target: {fileID: 385186987347510689, guid: 874b30f01875216439f3eba87cc6606b, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -1.879
+      value: -1.981
       objectReference: {fileID: 0}
     - target: {fileID: 385186987347510689, guid: 874b30f01875216439f3eba87cc6606b, type: 3}
       propertyPath: m_LocalPosition.z
@@ -395,8 +395,32 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 6558329747182527631, guid: 874b30f01875216439f3eba87cc6606b, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 944691512}
   m_SourcePrefab: {fileID: 100100000, guid: 874b30f01875216439f3eba87cc6606b, type: 3}
+--- !u!1 &944691511 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 6558329747182527631, guid: 874b30f01875216439f3eba87cc6606b, type: 3}
+  m_PrefabInstance: {fileID: 944691510}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &944691512
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 944691511}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a5556de4e89529e4aa95337625fe7aec, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  projectile: {fileID: 8468737772128091081, guid: 968a1f4f5dd51b04dabe0b2d17c88ed1, type: 3}
+  Player: {fileID: 978722182}
+  projectileForce: 2.4
+  cooldown: 0.52
 --- !u!4 &978722182 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 9021304799168322478, guid: 015b4024436630b429d11f86856478ac, type: 3}
@@ -407,5 +431,5 @@ SceneRoots:
   m_ObjectHideFlags: 0
   m_Roots:
   - {fileID: 939505771}
-  - {fileID: 444925690}
   - {fileID: 944691510}
+  - {fileID: 444925690}
