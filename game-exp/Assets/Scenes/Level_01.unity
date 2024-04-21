@@ -376,7 +376,10 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 3462408899375786029, guid: 015b4024436630b429d11f86856478ac, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1212425843}
   m_SourcePrefab: {fileID: 100100000, guid: 015b4024436630b429d11f86856478ac, type: 3}
 --- !u!1 &939505768
 GameObject:
@@ -771,6 +774,21 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 3462408899375786029, guid: 015b4024436630b429d11f86856478ac, type: 3}
   m_PrefabInstance: {fileID: 444925690}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &1212425843
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1212425842}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6fddcd752a9307c469476c3cb3dfbbba, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  dashRange: 1
+  speed: 5
+  direction: {x: 0, y: 0}
 --- !u!1 &1408109551
 GameObject:
   m_ObjectHideFlags: 0
