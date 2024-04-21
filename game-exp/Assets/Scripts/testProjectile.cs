@@ -9,7 +9,7 @@ public class testProjectile : MonoBehaviour
 
     void OnTriggerEnter2D(Collider2D collision)
     {
-        if (collision.name != "Player" & collision.name != "testSpell(Clone)")
+        if (collision.tag == "Enemy")
         {
             if(collision.GetComponent<enemy_receive_dmg>() != null)
             {

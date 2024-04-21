@@ -5,7 +5,7 @@ using UnityEngine;
 public class PlayerMovement : MonoBehaviour
 {
     public float speed;
-    private Vector2 direction;
+    public Vector2 direction;   
     private Vector2 directionHistory;
     private Animator animator;
 
