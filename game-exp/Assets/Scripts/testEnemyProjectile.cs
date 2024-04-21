@@ -9,7 +9,7 @@ public class testEnemyProjectile : MonoBehaviour
 
     void OnTriggerEnter2D(Collider2D collision)
     {
-        if (collision.tag != "test_enemy" & collision.name != "testEnemySpell(Clone)")
+        if (collision.tag != "Enemy" & collision.name != "testEnemySpell(Clone)")
         {
             if (collision.name == "testSpell(Clone)")
                 Destroy(gameObject);

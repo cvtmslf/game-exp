@@ -15,7 +15,7 @@ public class testProjectile : MonoBehaviour
             {
                 collision.GetComponent<enemy_receive_dmg>().DealDamage(Random.Range(minDamage, maxDamage));
             }
-                      
+                        
         Destroy(gameObject); 
 
         }

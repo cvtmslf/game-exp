@@ -372,6 +372,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: test_enemy
       objectReference: {fileID: 0}
+    - target: {fileID: 6558329747182527631, guid: 874b30f01875216439f3eba87cc6606b, type: 3}
+      propertyPath: m_TagString
+      value: Enemy
+      objectReference: {fileID: 0}
     - target: {fileID: 7979970278409945675, guid: 874b30f01875216439f3eba87cc6606b, type: 3}
       propertyPath: m_Color.b
       value: 0

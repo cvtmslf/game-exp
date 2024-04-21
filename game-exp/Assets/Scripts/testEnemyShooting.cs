@@ -25,6 +25,7 @@ public class testEnemyShooting : MonoBehaviour
             Vector2 myPos = transform.position;
             Vector2 targerPos = Player.position;
             Vector2 direction = (targerPos - myPos).normalized;
+            spell.transform.rotation = Quaternion.LookRotation(transform.forward, direction);
             spell.GetComponent<Rigidbody2D>().velocity = direction * projectileForce;
             Destroy(spell,2);
             StartCoroutine(ShootPlayer());
