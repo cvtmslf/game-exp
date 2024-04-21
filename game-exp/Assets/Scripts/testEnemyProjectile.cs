@@ -9,10 +9,17 @@ public class testEnemyProjectile : MonoBehaviour
 
     void OnTriggerEnter2D(Collider2D collision)
     {
-        if (collision.tag != "Enemy" & collision.name != "testEnemySpell(Clone)")
+        if (collision.tag != "Enemy")
         {
-            if (collision.name == "testSpell(Clone)")
+            if (collision.tag == "Player")
+            {
+                PlayerStats.playerStats.DealDamage(Random.Range(minDamage, maxDamage));
                 Destroy(gameObject);
+            }      
+            if (collision.tag == "PlayerSpell")
+            {
+                Destroy(gameObject);
+            }
             else
                 Destroy(gameObject,5);
         }
