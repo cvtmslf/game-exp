@@ -48,6 +48,7 @@ public class enemy_receive_dmg : MonoBehaviour
     {
         return (health / maxHealth);
     }
+
     // Update is called once per frame
     void Update()
     {
