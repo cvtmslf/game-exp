@@ -18,6 +18,9 @@ public class PlayerStats : MonoBehaviour
     public int coins;
     public int gems;
 
+    public Text coinsValue;
+    public Text gemsValue;
+
 
     private void Awake()
     {
@@ -80,4 +83,17 @@ public class PlayerStats : MonoBehaviour
         return (health / maxHealth);
     }
 
+    public void AddCurency(CurrentPickup currency)
+    {
+        if (currency.currentObject == CurrentPickup.PickupQuanity.COIN)
+        {
+            coins += currency.pickupQuantity;
+            coinsValue.text = "Gold value: " + coins.ToString();
+        }
+        else if (currency.currentObject == CurrentPickup.PickupQuanity.GEM)
+        {
+            gems += currency.pickupQuantity;
+            gemsValue.text = "Gems value: " + gems.ToString();
+        }
+    }
 }
