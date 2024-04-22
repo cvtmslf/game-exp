@@ -12,6 +12,7 @@ public class enemy_receive_dmg : MonoBehaviour
     public GameObject healthBar;
     public Slider healthBarSlider;
 
+    public GameObject lootDrop;
     void Start()
     {
         health = maxHealth;
@@ -38,7 +39,8 @@ public class enemy_receive_dmg : MonoBehaviour
     { 
         if (health <= 0) 
         { 
-            Destroy(gameObject);                         
+            Destroy(gameObject);
+            Instantiate(lootDrop, transform.position, Quaternion.identity); 
         } 
     }
 

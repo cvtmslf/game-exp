@@ -385,7 +385,7 @@ GameObject:
   - component: {fileID: 317828862}
   - component: {fileID: 317828861}
   m_Layer: 5
-  m_Name: Canvas
+  m_Name: UI Overlay
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -592,6 +592,22 @@ PrefabInstance:
       propertyPath: m_TagString
       value: Player
       objectReference: {fileID: 0}
+    - target: {fileID: 4959061175701255528, guid: 015b4024436630b429d11f86856478ac, type: 3}
+      propertyPath: m_Size.x
+      value: 0.72
+      objectReference: {fileID: 0}
+    - target: {fileID: 4959061175701255528, guid: 015b4024436630b429d11f86856478ac, type: 3}
+      propertyPath: m_Size.y
+      value: 1.01
+      objectReference: {fileID: 0}
+    - target: {fileID: 4959061175701255528, guid: 015b4024436630b429d11f86856478ac, type: 3}
+      propertyPath: m_Offset.y
+      value: -0.06
+      objectReference: {fileID: 0}
+    - target: {fileID: 4959061175701255528, guid: 015b4024436630b429d11f86856478ac, type: 3}
+      propertyPath: m_IsTrigger
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 9021304799168322478, guid: 015b4024436630b429d11f86856478ac, type: 3}
       propertyPath: m_LocalPosition.x
       value: -0.01
@@ -632,13 +648,17 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 7892667334235820323, guid: 015b4024436630b429d11f86856478ac, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents:
     - targetCorrespondingSourceObject: {fileID: 3462408899375786029, guid: 015b4024436630b429d11f86856478ac, type: 3}
       insertIndex: -1
       addedObject: {fileID: 1212425843}
+    - targetCorrespondingSourceObject: {fileID: 3462408899375786029, guid: 015b4024436630b429d11f86856478ac, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1212425849}
   m_SourcePrefab: {fileID: 100100000, guid: 015b4024436630b429d11f86856478ac, type: 3}
 --- !u!1 &939505768
 GameObject:
@@ -828,6 +848,10 @@ PrefabInstance:
       propertyPath: health
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 6401369397787180566, guid: 874b30f01875216439f3eba87cc6606b, type: 3}
+      propertyPath: lootDrop
+      value: 
+      objectReference: {fileID: 8586387978885540872, guid: b6d507c455409cb4e98c22a5021082b2, type: 3}
     - target: {fileID: 6401369397787180566, guid: 874b30f01875216439f3eba87cc6606b, type: 3}
       propertyPath: healthBar
       value: 
@@ -1101,10 +1125,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   player: {fileID: 1212425842}
-  healthText: {fileID: 0}
-  healthSlider: {fileID: 0}
+  healthText: {fileID: 90559987}
+  healthSlider: {fileID: 1226905543}
   health: 0
   maxHealth: 100
+  coins: 0
+  gems: 0
 --- !u!4 &1168080039
 Transform:
   m_ObjectHideFlags: 0
@@ -1175,6 +1201,33 @@ MonoBehaviour:
   dashRange: 1
   speed: 5
   direction: {x: 0, y: 0}
+--- !u!50 &1212425849
+Rigidbody2D:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1212425842}
+  m_BodyType: 0
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 0
+  m_UseAutoMass: 0
+  m_Mass: 0.0001
+  m_LinearDrag: 0
+  m_AngularDrag: 0
+  m_GravityScale: 0
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 0
+  m_Constraints: 0
 --- !u!1 &1226905541
 GameObject:
   m_ObjectHideFlags: 0
