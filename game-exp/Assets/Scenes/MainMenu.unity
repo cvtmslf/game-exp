@@ -1048,7 +1048,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 'Roguelike test
+  m_text: 'Destroy them ALL
 
 '
   m_isRightToLeft: 0
@@ -1077,8 +1077,8 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 172.67
-  m_fontSizeBase: 172.67
+  m_fontSize: 142.81
+  m_fontSizeBase: 142.81
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18

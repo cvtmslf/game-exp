@@ -5,7 +5,7 @@ using UnityEngine;
 public class testEnemyShooting : MonoBehaviour
 {
     public GameObject projectile;
-    public Transform Player;
+    private GameObject Player;
     public float projectileForce;
     public float cooldown;
     
@@ -13,7 +13,7 @@ public class testEnemyShooting : MonoBehaviour
     void Start()
     {
         StartCoroutine(ShootPlayer());
-
+        Player = FindObjectOfType<PlayerMovement>().gameObject;
     }
 
     IEnumerator ShootPlayer()
@@ -23,7 +23,7 @@ public class testEnemyShooting : MonoBehaviour
         { 
             GameObject spell = Instantiate(projectile, transform.position, Quaternion.identity);
             Vector2 myPos = transform.position;
-            Vector2 targerPos = Player.position;
+            Vector2 targerPos = Player.transform.position;
             Vector2 direction = (targerPos - myPos).normalized;
             spell.transform.rotation = Quaternion.LookRotation(transform.forward, direction);
             spell.GetComponent<Rigidbody2D>().velocity = direction * projectileForce;
