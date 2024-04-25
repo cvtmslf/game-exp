@@ -11,6 +11,7 @@ public class NewBehaviourScript : MonoBehaviour
     Vector2 noTerrainPosition;
     public LayerMask terrainMask;
     PlayerMovement pm;
+    public GameObject currentChunk;
 
     void Start()
     {
@@ -28,6 +29,12 @@ public class NewBehaviourScript : MonoBehaviour
 
     void ChunkChecker()
     {
+        if (!currentChunk)
+        {
+            return;
+        }    
+
+
         if (pm.direction.x > 0 && pm.direction.y == 0) //right
         {
             if (!Physics2D.OverlapCircle(player.transform.position + new Vector3(20,0, 0), checkerRadius, terrainMask))
