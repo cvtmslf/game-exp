@@ -8,7 +8,9 @@ public class PlayerMovement : MonoBehaviour
     public float dashRange;
     public float speed;
     public Vector2 direction;
-    private Vector2 directionHistory;
+    public Vector2 directionHistory;
+    public float lastHorizontalVector;
+    public float lastVerticalVector;
     private Animator animator;
     private enum Facing { UP, DOWN, LEFT, RIGHT };
     private Facing FacingDir = Facing.DOWN;
@@ -16,6 +18,7 @@ public class PlayerMovement : MonoBehaviour
     private void Start()
     {
         animator = GetComponent<Animator>();
+        directionHistory = new Vector2(1, 0f);
     }
     void Update()
     {
