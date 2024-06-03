@@ -29,4 +29,10 @@ public class MainMenu : MonoBehaviour       {
         Debug.Log("ExitGame");
         Application.Quit();
     }
+
+    public void ChangeMenu()
+    {
+        SceneManager.LoadScene(0);
+        Time.timeScale = 1f;
+    }
 }

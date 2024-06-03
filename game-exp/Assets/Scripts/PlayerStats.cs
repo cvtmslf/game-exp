@@ -18,9 +18,10 @@ public class PlayerStats : MonoBehaviour
     public int coins;
     public int gems;
 
+    public int level = 1;
+
     public Text coinsValue;
     public Text gemsValue;
-
 
     private void Awake()
     {
@@ -75,6 +76,11 @@ public class PlayerStats : MonoBehaviour
         {
             health = 0;
             Destroy(player);
+            if (!GameManager.instance.isGameOver)
+            {
+                GameManager.instance.AssignCoinUI(coins);
+                GameManager.instance.GameOver();
+            }
         }
     }
 

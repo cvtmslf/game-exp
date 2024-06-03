@@ -24,7 +24,6 @@ public class PlayerMovement : MonoBehaviour
     {
         TakeInput();
         Move();
-
     }
     
     private void Move()
